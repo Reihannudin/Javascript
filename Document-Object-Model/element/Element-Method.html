@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element-Method</title>
+</head>
+<body>
+    
+    <div id="content1" class = "content">
+        <h1 id="title1" class="title">This is title</h1>
+        <p id = "description1" class="description">This is description</p>
+    </div>
+
+    <div id="content2" class = "content">
+        <h1 id="title2" class="title"></h1>
+        <p id = "description2" class="description"></p>
+    </div>
+
+
+    <script>
+        const title1 = document.getElementById("title1")
+        const description1 = document.getElementById("description2")
+
+        title1.remove()
+
+        // add emlement
+        const content2 = document.getElementById("content2")
+
+        const title2 = document.createElement("h1")
+        title2.textContent = "Belajar Javascript Async"
+        content2.appendChild(title2)
+
+        const description2 = document.createElement("p")
+        description2.textContent = "Selamat belajar javacript Async"
+        content2.appendChild(description2)
+    </script>
+</body>
+</html>
